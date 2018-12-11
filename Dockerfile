@@ -14,7 +14,7 @@ COPY deploy/nginx.conf /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
-EXPOSE 8080
+EXPOSE 80
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
