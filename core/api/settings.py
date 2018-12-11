@@ -93,8 +93,8 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # }
 
 
-hostname = socket.gethostname()
-if "prod-web-" in hostname:
+
+if os.getenv('PRODUCTION', False):
     DEBUG = False
     DATABASES = {
         'default': {
@@ -104,19 +104,6 @@ if "prod-web-" in hostname:
         'PASSWORD': '1.Scarface',
         'HOST': 'munchies.cijoffff8xni.ca-central-1.rds.amazonaws.com',
         'PORT': '',
-        }
-    }
-    LOG_PATH = "/var/log/"
-elif "prod-sv" in hostname:
-    DEBUG = False
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'munchies_cms',
-            'USER': 'abhaybarthwal',
-            'PASSWORD': '1.Scarface',
-            'HOST': 'munchies.cijoffff8xni.ca-central-1.rds.amazonaws.com',
-            'PORT': '',
         }
     }
     LOG_PATH = "/var/log/"
