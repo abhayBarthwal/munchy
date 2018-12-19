@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'api.wsgi.application'
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'munchies_cms',
-#         'USER': 'abhaybarthwal',
-#         'PASSWORD' : '1.Scarface',
-#         'HOST': 'munchies.cijoffff8xni.ca-central-1.rds.amazonaws.com',
+#         'USER': 'xxx',
+#         'PASSWORD': 'xxx',
+#         'HOST': 'xxx',
 #     }
 # }
 
@@ -100,9 +100,9 @@ if os.getenv('PRODUCTION', False):
         'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'munchies_cms',
-        'USER': 'abhaybarthwal',
-        'PASSWORD': '1.Scarface',
-        'HOST': 'munchies.cijoffff8xni.ca-central-1.rds.amazonaws.com',
+        'USER': 'xxx',
+        'PASSWORD': 'xxx',
+        'HOST': 'xxx',
         'PORT': '',
         }
     }
@@ -112,13 +112,12 @@ else:
     LOG_PATH = BASE_DIR
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'munchies_cms',
-            'USER': 'abhaybarthwal',
-            'PASSWORD': '1.Scarface',
-            'HOST': 'munchies.cijoffff8xni.ca-central-1.rds.amazonaws.com',
-            'HOST': 'munchies.cijoffff8xni.ca-central-1.rds.amazonaws.com',
-            'PORT': '',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'munchies_cms',
+        'USER': 'xxx',
+        'PASSWORD': 'xxx',
+        'HOST': 'xxx',
+        'PORT': '',
         }
     }
 
